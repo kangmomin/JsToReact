@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+
+    <h2>
+        <pre>
+1. &lt;tr&gt;태그는 테이블에서 열을 구분해 줍니다.
+2. &lt;th&gt;태그는각 열의 제목을 나타내며, 모든 내용은 자동으로 굵은 글씨에 가운데 정렬이 됩니다.
+3. &lt;td&gt;태그는 테이블의 열을 각각의 셀(cell)로 나누어 줍니다.
+        </pre>
+    </h2>
+
+    <table border="1">
+        <caption>해양 생물</caption>
+        <tr>
+            <th>참치</th>
+            <th>고래</th>      
+        </tr>
+    
+        <tr>
+            <td>상어</td>
+            <td>문어</td>
+        </tr>
+    
+        <tr>
+            <td>오징어</td>
+            <td>고등어</td>
+        </tr>
+    </table>
+
+    <br>
+    
+    <table border="1">
+        <tr>
+            <td>참치</td>
+            <td colspan="2">고래</td>        
+        </tr>
+    
+        <tr>
+            <td>상어</td>
+            <td>문어</td>        
+            <td>꽁치</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <td rowspan="2">상어</td>
+            <td>문어</td>        
+            <td>꽁치</td>
+        </tr>
+        <tr>
+            <td>고등어</td>        
+            <td>돌고래</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="https://search.naver.com/search.naver">
+        검색할 내용을 입력하세요 :
+        <input type="text" name="query">
+        <input type="submit" value="검색">
+    </form>
+
+    <form>
+        <input type="radio" name="lecture" value="html" checked> HTML <br>
+        <input type="radio" name="lecture" value="css"> CSS <br>
+        <input type="radio" name="lecture" value="java"> JAVA <br>
+        <input type="radio" name="lecture" value="cpp"> C++
+    </form>
+    <br>
+    <form>
+        <input type="checkbox" name="lectureChk" value="html" checked> HTML <br>
+        <input type="checkbox" name="lectureChk" value="css"> CSS <br>
+        <input type="checkbox" name="lectureChk" value="java"> JAVA <br>
+        <input type="checkbox" name="lectureChk" value="cpp"> C++
+    </form>
+
+    비밀번호: <input type="password" name="password"><br>
+    파일    : <input type="file" name="upload_file" accept="image/*">
+
+    <br> <br>
+
+    <textarea name="message" rows="5" cols="30">
+        문장
+    </textarea>
+</body>
+</html>
