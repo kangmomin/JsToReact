@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/post.css">
+    <title>게시글</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <a href="index.html" class="nav-logo">로고</a>
+            <div class="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="post">
+                <div class="headline">
+                    <h2>야옹</h2>
+                    <div class="info">
+                        <img class="profile-img" src="./img/profile.jpg" alt="profile">
+                        <span class="user-name">하니</span>
+                        <span> | </span>
+                        <span class="date">2023.05.29</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="content-container">
+                    <img id="image-show" src="./img/post.jpg" alt="post">
+                    <div class="content">므야아앙오와옹</div>
+                </div>
+            </div>
+            <button class="list-button" onclick="location.href='index.html'">목록으로</button></a>
+            <form class="comment-form">
+                <textarea placeholder="댓글을 입력해주세요"></textarea>
+                <button type="button" class="submit">등록하기</button>
+            </form>
+            <div class="comments">
+                <div class="comment">
+                    <div class="top">
+                        <div class="author">먼지</div>
+                        <button class="delete-button">삭제</button>
+                    </div>
+                    <p class="content">크앙</p>
+                    <div class="time">2023.05.31 11:25</div>
+                </div>
+                <div class="comment">
+                    <div class="top">
+                        <div class="author">먼지</div>
+                        <button class="delete-button">삭제</button>
+                    </div>
+                    <p class="content">크앙</p>
+                    <div class="time">2023.05.31 11:25</div>
+                </div>
+                <div class="comment">
+                    <div class="top">
+                        <div class="author">먼지</div>
+                        <button class="delete-button">삭제</button>
+                    </div>
+                    <p class="content">크앙</p>
+                    <div class="time">2023.05.31 11:25</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/nav.js"></script>
+</body>
+</html>

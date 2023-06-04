@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/posting.css">
+    <title>게시글 작성</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <a href="index.html" class="nav-logo">로고</a>
+            <div class="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="title-container">
+            <div class="title">Posting</div>
+        </div>
+        <div class="posting-container">
+            <input class="input-title" type="text" placeholder="제목을 입력하세요.">
+            <textarea class="input-content" placeholder="게시글 내용을 입력하세요."></textarea>
+        </div>
+        <div class="button-container">
+            <div class="image-upload-container">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="upload-button">
+                        <label for="input-file">사진 첨부</label>
+                    </div>
+                    <input type="file" id="input-file" accept="image/*" onchange="loadFile(this)"/>
+                </form>
+                <p id="file-name"></p>
+            </div>
+            <button class="complete-button" onclick="location.href='post.html'">작성 완료</button></a>
+        </div>
+    </main>
+    <script src="./js/nav.js"></script>
+    <script src="./js/image-upload.js"></script>
+</body>
+</html>

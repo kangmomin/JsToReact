@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/list.css">
+    <title>게시판</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <a href="index.html" class="nav-logo">로고</a>
+            <div class="nav-menu">
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="headline">
+            <div class="title">Board</div>
+            <button id="post-button" onclick="location.href='posting.html'">글쓰기<i class='bx bxs-edit-alt'></i></button>
+        </div>
+        <div class="container">
+            <table id="post-table">
+                <colgroup>
+                    <col style="width: 10%;"/>
+                    <col style="width: 70%;"/>
+                    <col style="width: 10%;"/>
+                    <col style="width: 10%;"/>
+                </colgroup>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>작성자</th>
+                    <th>작성일</th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="post.html">미야옹</a></td>
+                    <td>보니</td>
+                    <td>23.05.30</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="post.html">야옹</a></td>
+                    <td>하니</td>
+                    <td>23.05.29</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="./js/nav.js"></script>
+</body>
+</html>
